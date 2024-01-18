@@ -4,6 +4,11 @@ const playerResult = document.getElementById("playerResult");
 const computerScore = document.getElementById("computerScore");
 const computerResult = document.getElementById("computerResult");
 const resultDisplay = document.getElementById("resultDisplay");
+const playerScoreBoard = document.getElementById("playerScoreBoard");
+const computerScoreBoard = document.getElementById("computerScoreBoard");
+
+let playerWins = 0;
+let computerWins = 0;
 
 function playGame(playerChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -29,4 +34,17 @@ function playGame(playerChoice) {
     playerResult.textContent = playerChoice;
     computerResult.textContent = computerChoice;
     resultDisplay.textContent = result;
+
+    switch(result){
+        case "YOU WIN!":
+            playerWins++;
+            playerScoreBoard.textContent = playerWins;
+            resultDisplay.classList.add("purpleText");
+            break;
+        case "YOU LOSE!":
+            computerWins++;
+            computerScoreBoard.textContent = computerWins;
+            resultDisplay.classList.add("blueText")
+            break;
+    }
 }

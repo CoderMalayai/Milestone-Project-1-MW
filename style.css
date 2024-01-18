@@ -8,6 +8,21 @@ body {
     align-items: center;
 }
 
-h1 {
-    
+.choices button {
+    margin: 20px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.choices button:hover{
+    background-color: #CB86F8;
+}
+
+.purpleText, #playerScoreBoard{
+    color: #921AFF;
+}
+
+.blueText, #computerScoreBoard{
+    color: #2742F0;
 }
