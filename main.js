@@ -1,6 +1,8 @@
 const choices = ["paper", "rock", "scissors"];
 const playerScore = document.getElementById("playerScore");
+const playerResult = document.getElementById("playerResult");
 const computerScore = document.getElementById("computerScore");
+const computerResult = document.getElementById("computerResult");
 const resultDisplay = document.getElementById("resultDisplay");
 
 function playGame(playerChoice) {
@@ -24,7 +26,7 @@ function playGame(playerChoice) {
         }
     }
 
-    playerScore.textContent = 'PLAYER: ${}'
-    computerScore.textContent = 'COMPUTER: ${computerChoice}';
+    playerResult.textContent = playerChoice;
+    computerResult.textContent = computerChoice;
     resultDisplay.textContent = result;
 }
