@@ -1,4 +1,4 @@
-const choices = ["paper", "rock", "scissors"];
+const choices = ["PAPER", "ROCK", "SCISSORS"];
 const playerScore = document.getElementById("playerScore");
 const playerResult = document.getElementById("playerResult");
 const computerScore = document.getElementById("computerScore");
@@ -6,11 +6,13 @@ const computerResult = document.getElementById("computerResult");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreBoard = document.getElementById("playerScoreBoard");
 const computerScoreBoard = document.getElementById("computerScoreBoard");
+const scoreBoard = document.getElementById("scoreBoard");
 
 let playerWins = 0;
 let computerWins = 0;
 
 function playGame(playerChoice) {
+
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     let result = "";
 
@@ -19,14 +21,14 @@ function playGame(playerChoice) {
     }
     else{
         switch(playerChoice) {
-            case "paper":
-                result = (computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+            case "PAPER":
+                result = (computerChoice === "ROCK") ? "YOU WIN!" : "YOU LOSE!";
                 break;
-            case "rock":
-                result = (computerChoice === "scissors") ? "YOU WIN!" : "YOU LOSE!";
+            case "ROCK":
+                result = (computerChoice === "SCISSORS") ? "YOU WIN!" : "YOU LOSE!";
                 break;
-            case "scissors":
-                result = (computerChoice === "paper") ? "YOU WIN!" : "YOU LOSE!";
+            case "SCISSORS":
+                result = (computerChoice === "PAPER") ? "YOU WIN!" : "YOU LOSE!";
                 break;
         }
     }
@@ -34,6 +36,8 @@ function playGame(playerChoice) {
     playerResult.textContent = playerChoice;
     computerResult.textContent = computerChoice;
     resultDisplay.textContent = result;
+
+    resultDisplay.classList.remove("purpleText", "blueText");
 
     switch(result){
         case "YOU WIN!":
@@ -46,5 +50,14 @@ function playGame(playerChoice) {
             computerScoreBoard.textContent = computerWins;
             resultDisplay.classList.add("blueText")
             break;
+    }
+
+    if(playerWins == 10){
+        scoreBoard.remove()
+        resultDisplay.textContent = "PLAYER WINS!";
+    }
+    else if(computerWins == 10){ 
+        scoreBoard.remove()
+        resultDisplay.textContent = "COMPUTER WINS!";
     }
 }

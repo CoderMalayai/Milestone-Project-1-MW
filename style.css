@@ -8,9 +8,14 @@ body {
     align-items: center;
 }
 
+h2 {
+    color: #921AFF;
+}
+
+
 .choices button {
     margin: 20px 0px;
-    border-radius: 50px;
+    border-radius: 55px;
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
