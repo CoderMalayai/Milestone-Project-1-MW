@@ -21,6 +21,8 @@ Outstanding Bugs or Unfinished Functionality:
 4) For this game I see it becoming more challenging and I wannna make it harder as we go further.
 5) I have wanted to add a  full screen saying that "this" player has won then play again.
 6) I do wanna add sound to my game like paper ripping and rocks dropping, I honestly tried doing it but all the audio I have found I had to pay and get it. 
+7) What really helped me alot was youtube tutorials by https://www.youtube.com/@BroCodez -
+Videos I watched to help me with functions, https://www.youtube.com/watch?v=3uKdQx-SZ5A and https://www.youtube.com/watch?v=n1_vHArDBRA&t=131s .
 
 WILSON, M(2024). Milestone-Project (v1) [Source Code]. https://github.com/CoderMalayai/Milestone-Project-1-MW.git
 
