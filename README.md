@@ -20,6 +20,9 @@ Outstanding Bugs or Unfinished Functionality:
 3) I would love to make it able to have 2 players go against each other in the future.
 4) For this game I see it becoming more challenging and I wannna make it harder as we go further.
 5) I have wanted to add a  full screen saying that "this" player has won then play again.
+6) I do wanna add sound to my game like paper ripping and rocks dropping, I honestly tried doing it but all the audio I have found I had to pay and get it. 
+
+WILSON, M(2024). Milestone-Project (v1) [Source Code]. https://github.com/CoderMalayai/Milestone-Project-1-MW.git
 
 
 
