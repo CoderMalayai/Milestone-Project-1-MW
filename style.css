@@ -31,3 +31,7 @@ h2 {
 .blueText, #computerScoreBoard{
     color: #2742F0;
 }
+
+.scoreBoard {
+    margin-top: 15px;
+}

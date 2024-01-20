@@ -30,6 +30,15 @@ function playGame(playerChoice) {
             case "SCISSORS":
                 result = (computerChoice === "PAPER") ? "YOU WIN!" : "YOU LOSE!";
                 break;
+            case "PAPER":
+                result = (computerChoice === "SCISSORS") ? "YOU WIN!" : "YOU LOSE!";
+                break;
+            case "ROCK":
+                result = (computerChoice === "PAPER") ? "YOU WIN!" : "YOU LOSE!";
+                break;
+            case "PAPER":
+                result = (computerChoice === "ROCK") ? "YOU WIN!" : "YOU LOSE!";
+                break;
         }
     }
 
@@ -52,11 +61,11 @@ function playGame(playerChoice) {
             break;
     }
 
-    if(playerWins == 10){
+    if(playerWins == 5){
         scoreBoard.remove()
         resultDisplay.textContent = "PLAYER WINS!";
     }
-    else if(computerWins == 10){ 
+    else if(computerWins == 5){ 
         scoreBoard.remove()
         resultDisplay.textContent = "COMPUTER WINS!";
     }
