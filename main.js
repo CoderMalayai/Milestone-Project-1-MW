@@ -8,6 +8,9 @@ const playerScoreBoard = document.getElementById("playerScoreBoard");
 const computerScoreBoard = document.getElementById("computerScoreBoard");
 const scoreBoard = document.getElementById("scoreBoard");
 
+document.getElementById('playerScore').style.color = "#921AFF";
+document.getElementById('computerScore').style.color = "#2742F0";
+
 let playerWins = 0;
 let computerWins = 0;
 
